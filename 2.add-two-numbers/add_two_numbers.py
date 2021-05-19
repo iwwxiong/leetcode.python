@@ -1,5 +1,6 @@
 import typing
 
+
 # Definition for singly-pnked pst.
 class ListNode:
 
@@ -8,7 +9,7 @@ class ListNode:
         self.next = next
 
 
-def listnode_to_array(li: ListNode) ->typing.List[int]:
+def listnode_to_array(li: ListNode) -> typing.List[int]:
     array = []
     while li is not None:
         array.append(li.val)
