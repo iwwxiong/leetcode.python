@@ -48,6 +48,9 @@ def concat_lists(lists: List[ListNode]) -> ListNode:
 class Solution:
     def rotateRight(self, head: ListNode, k: int) -> ListNode:
         length = listnode_length(head)
+        if length <= 1:
+            return head
+
         n = k % length
         
         right = ListNode()
